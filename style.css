@@ -8,6 +8,7 @@ body.pagetwo{
     background-size: cover;
 }
 
+<<<<<<< HEAD
 .start {
     text-align: center;
     margin-top: 8%;
@@ -45,4 +46,14 @@ body.pagetwo{
 
 .Spill {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+=======
+h1.p2{
+    color: #E4773E;
+    -webkit-text-stroke: 10% black;
+    text-align: center;
+    margin-top: 7vw;
+    font: Inter;
+    font-weight: 400;
+    text-shadow: 0 0 5px #E6BD33, 0 0 10px #E6BD33, 0 0 15px rgba(0, 0, 0, 0.445);
+>>>>>>> 5719e7d81c0b0bfffb23b50743bca00672432a08
 }
