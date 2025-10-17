@@ -8,6 +8,11 @@ body.pagetwo{
     background-size: cover;
 }
 
+body.guldør {
+    background-image: url('/img/5be3cd7c52caab2ad24de7acd0bb1b2da7afd699.png');
+    background-size: cover;
+}
+
 .start {
     text-align: center;
     margin-top: 8%;
