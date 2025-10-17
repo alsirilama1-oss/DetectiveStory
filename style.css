@@ -1,3 +1,8 @@
-body{
-    background image: url('/img/fantasy_game_title_screen_showing_a_glowing_time_portal_surrounded_by_floating_clocks_and_symbols_m_quuz0h6mjff895amajzv_1.png');
+body.start{
+    background-image: url('/img/fantasy_game_title_screen_showing_a_glowing_time_portal_surrounded_by_floating_clocks_and_symbols_m_quuz0h6mjff895amajzv_1.png');
+    background-size: cover;
+}
+
+body.pagetwo{
+
 }
