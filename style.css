@@ -30,7 +30,7 @@ h1.p2{
 }
 .btnpg2_1:hover {
   background-color: #e4783ea6
-  transform: scale(1.05);
+  transform scale(1.05);
 }
 
 /* Button 2 – cyan glow */
@@ -57,5 +57,5 @@ h1.p2{
 }
 .btnpg2_3:hover {
   background-color: #e4783ea7
-  transform: scale(1.05);
+  transform scale(1.05);
 }
