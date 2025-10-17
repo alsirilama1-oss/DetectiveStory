@@ -10,10 +10,52 @@ body.pagetwo{
 
 h1.p2{
     color: #E4773E;
-    -webkit-text-stroke: 10% black;
+    -webkit-text-stroke: 0.03rem black;
     text-align: center;
     margin-top: 7vw;
     font: Inter;
     font-weight: 400;
-    text-shadow: 1
+    text-shadow:  1rem 2rem 3rem #fbff00;
+    
+}
+
+
+/* Button 1 – yellow glow */
+.btnpg2_1 {
+    background-color: #e4783e;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 17rem;
+  margin-left: 10vw;
+}
+.btnpg2_1:hover {
+  background-color: #e4783ea6
+  transform: scale(1.05);
+}
+
+/* Button 2 – cyan glow */
+.btnpg2_2 {
+  background-color: #e4783e;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 17rem;
+    margin-left: 20vw;
+}
+.btnpg2_2:hover {
+  background-color: #e4783e9b;
+  transform: scale(1.05);
+}
+
+/* Button 3 – magenta glow */
+.btnpg2_3 {
+  background-color: #e4783e;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 17rem;
+  margin-left: 21.5vw;
+  
+}
+.btnpg2_3:hover {
+  background-color: #e4783ea7
+  transform: scale(1.05);
 }
