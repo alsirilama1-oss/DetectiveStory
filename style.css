@@ -127,3 +127,13 @@ h1.p2{
   background-color: #e4783ea7
   transform scale(1.05);
 }
+
+.guldørtekst{
+  align-content: center;
+  color: #CE6D3A;
+    text-shadow: 0 0 0.5em #ffc400;
+    font-size: 1.6em;
+    -webkit-text-stroke: 0.04em black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
