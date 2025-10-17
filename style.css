@@ -70,10 +70,10 @@ h1.p2{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  width: 10rem;
-  height: 3rem;
-  margin-top: 17rem;
-  margin-left: 10vw;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 17rem;
+    margin-left: 10vw;
 }
 .btnpg2_1:hover {
   background-color: #e4783ea6
@@ -91,9 +91,9 @@ h1.p2{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  width: 10rem;
-  height: 3rem;
-  margin-top: 17rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 17rem;
     margin-left: 20vw;
 }
 .btnpg2_2:hover {
@@ -112,10 +112,10 @@ h1.p2{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  width: 10rem;
-  height: 3rem;
-  margin-top: 17rem;
-  margin-left: 21.5vw;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 17rem;
+    margin-left: 21.5vw;
   
 }
 .btnpg2_3:hover {
