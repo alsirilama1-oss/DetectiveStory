@@ -55,14 +55,21 @@ h1.p2{
     text-align: center;
     margin-top: 7vw;
     font: Inter;
-        font-weight: 400;
-    
+    font-weight: 400;
 }
 
 
 /* Button 1 – yellow glow */
 .btnpg2_1 {
-    background-color: #e4783e;
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   width: 10rem;
   height: 3rem;
   margin-top: 17rem;
@@ -70,12 +77,20 @@ h1.p2{
 }
 .btnpg2_1:hover {
   background-color: #e4783ea6
-  transform: scale(1.05);
+  transform scale(1.05);
 }
 
 /* Button 2 – cyan glow */
 .btnpg2_2 {
-  background-color: #e4783e;
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   width: 10rem;
   height: 3rem;
   margin-top: 17rem;
@@ -88,7 +103,15 @@ h1.p2{
 
 /* Button 3 – magenta glow */
 .btnpg2_3 {
-  background-color: #e4783e;
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   width: 10rem;
   height: 3rem;
   margin-top: 17rem;
@@ -97,5 +120,5 @@ h1.p2{
 }
 .btnpg2_3:hover {
   background-color: #e4783ea7
-  transform: scale(1.05);
+  transform scale(1.05);
 }
