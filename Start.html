@@ -10,7 +10,185 @@
     
 
     <title>My Web Page</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+body.start{
+    background-image: url('/img/fantasy_game_title_screen_showing_a_glowing_time_portal_surrounded_by_floating_clocks_and_symbols_m_quuz0h6mjff895amajzv_1.png');
+    background-size: cover;
+}
+
+body.pagetwo{
+    background-image: url('/img/dark_mysterious_room_with_three_large_fantasy_doors__one_with_ancient_runes_glowing_gold_one_metall_272hu4o8y14vbjqjbad6_2.png');
+    background-size: cover;
+}
+
+body.guldoor {
+    background-image: url('/img/5be3cd7c52caab2ad24de7acd0bb1b2da7afd699.png');
+    background-size: cover;
+}
+
+.start {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.start h1 {
+    color: #CE6D3A;
+    text-shadow: 0 0 0.5em #ffc400;
+    font-size: 3em;
+    -webkit-text-stroke: 0.030em black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.start h2 {
+    color: #CE6D3A;
+    text-shadow: 0 0 0.5em #ffc400;
+    font-size: 1.6em;
+    -webkit-text-stroke: 0.04em black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Playbutton {
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 43.5%;
+}
+
+.Spill {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1.p2{
+    color: #CE6D3A;
+    text-shadow: 0 0 0.5em #ffc400;
+    -webkit-text-stroke: 0.030rem black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 7vw;
+    font: Inter;
+    font-weight: 400;
+}
+
+/* Button 1 – yellow glow */
+.btnpg2_1 {
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 17rem;
+    margin-left: 10vw;
+}
+.btnpg2_1:hover {
+  background-color: #e4783ea6
+  transform scale(1.05);
+}
+
+/* Button 2 – cyan glow */
+.btnpg2_2 {
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 17rem;
+    margin-left: 20vw;
+}
+.btnpg2_2:hover {
+  background-color: #e4783e9b;
+  transform: scale(1.05);
+}
+
+/* Button 3 – magenta glow */
+.btnpg2_3 {
+    margin-top: 6%;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 17rem;
+    margin-left: 21.5vw;
+  
+}
+.btnpg2_3:hover {
+  background-color: #e4783ea7
+  transform scale(1.05);
+}
+
+.guldørtekst{
+  color: #CE6D3A;
+    text-shadow: 0 0 0.5em #ffc400;
+    text-align: center;
+    font-size: 1.6em;
+    -webkit-text-stroke: 0.04em black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.rowguldør{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    gap: 5%;
+}
+
+.btnpguldør_1{
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    color: #CE6D3A;
+    text-shadow: 0 0 0.5em #ffc400;
+    font-size: 3em;
+    -webkit-text-stroke: 0.030em black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btnpguldør_2{
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+}
+
+.btnpguldør_3{
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2em;
+    background-color: #CE6D3A;
+    justify-content: space-evenly;
+  
+}
+</style>
     <script src="script.js" defer></script>
 </head>
 <body class="start">
