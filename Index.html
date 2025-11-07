@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM Esport Hub – Registrering</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-
-
 <body>
-    <h1>IM Esport Hub</h1>
-    <p>Skolens ultimate gaming arena. Konkurer, vinn og bli <br> legendarisk!
-</p>
+  <div class="register-container">
+    <h1>Registrer deg</h1>
+    <form id="registerForm">
+      <div class="input-group">
+        <label>Fornavn</label>
+        <input type="text" id="firstName" placeholder="Skriv fornavn" required>
+      </div>
+
+      <div class="input-group">
+        <label>Etternavn</label>
+        <input type="text" id="lastName" placeholder="Skriv etternavn" required>
+      </div>
+
+      <div class="input-group">
+        <label>Klasse</label>
+        <input type="text" id="class" placeholder="F.eks. 2IM, 3MED ..." required>
+      </div>
+
+      <button type="submit" class="btn">Registrer</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
-
-
-
-
-
-
 </html>

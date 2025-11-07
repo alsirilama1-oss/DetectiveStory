@@ -1,0 +1,219 @@
+/* === MAIN PAGE STYLES (dark background version) === */
+
+/* Глобальний фон */
+body {
+  background: linear-gradient(135deg, #0a0a12 0%, #101828 50%, #1e1b4b 100%);
+  color: #e2e8f0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+  background: radial-gradient(circle at top center, rgba(37, 99, 235, 0.25), rgba(15, 23, 42, 0.95)),
+              url('back.jpg') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem 4rem;
+  border-radius: 25px;
+  max-width: 800px;
+  box-shadow: 0 0 40px rgba(59,130,246,0.3);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #60a5fa;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 20px rgba(96,165,250,0.5);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #c7d2fe;
+  margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn.blue {
+  background-color: #3b82f6;
+  box-shadow: 0 0 15px rgba(59,130,246,0.6);
+}
+
+.btn.purple {
+  background-color: #8b5cf6;
+  box-shadow: 0 0 15px rgba(139,92,246,0.6);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* === STATISTICS SECTION === */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  text-align: center;
+  padding: 5rem 2rem;
+  flex-wrap: wrap;
+  background: rgba(17, 24, 39, 0.8);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  min-width: 220px;
+}
+
+.stat h3 {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  color: #60a5fa;
+}
+
+.icon {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 20px rgba(96,165,250,0.6);
+}
+
+/* === TOURNAMENT SECTION === */
+.tournaments {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.tournaments h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #c7d2fe;
+  text-shadow: 0 0 15px rgba(139,92,246,0.5);
+}
+
+.subtitle {
+  color: #a5b4fc;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.tournament-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.tournament-card {
+  background: linear-gradient(160deg, rgba(39,39,65,0.9), rgba(30,27,75,0.9));
+  border-radius: 25px;
+  padding: 2rem 2.5rem;
+  width: 350px;
+  text-align: left;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  transition: transform 0.25s, box-shadow 0.25s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.tournament-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(96,165,250,0.4);
+}
+
+.tournament-card h3 {
+  color: #60a5fa;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.tournament-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.badge {
+  background: #3b82f6;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  color: white;
+  box-shadow: 0 0 10px rgba(59,130,246,0.6);
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 3rem;
+  background: rgba(10,10,20,0.8);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tournament-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tournament-card {
+    width: 90%;
+  }
+}
