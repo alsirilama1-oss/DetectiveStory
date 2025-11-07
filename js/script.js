@@ -1,5 +1,5 @@
 // Når man trykker på "Registrer"
-document.getElementById('registerForm').addEventListener('submit', function(e) {
+document.getElementById('registerForm').addEventListener('submit', async function(e) {
   e.preventDefault();
 
   const student = {
@@ -8,10 +8,20 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     class: document.getElementById('class').value,
   };
 
-  // Lagre data i localStorage (mini database)
-  let students = JSON.parse(localStorage.getItem('students')) || [];
-  students.push(student);
-  localStorage.setItem('students', JSON.stringify(students));
+  try {
+    const res = await fetch('/api/students', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(student)
+    });
+
+    if (!res.ok) throw new Error('Server error');
+  } catch (err) {
+    // Fallback til localStorage hvis server ikke kjører
+    let students = JSON.parse(localStorage.getItem('students')) || [];
+    students.push(student);
+    localStorage.setItem('students', JSON.stringify(students));
+  }
 
   // Gå videre til hovedsiden
   window.location.href = "main.html";
