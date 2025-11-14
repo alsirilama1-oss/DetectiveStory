@@ -49,16 +49,7 @@
     "passwordHash": "$2b$10$aGe.YPX1hN88NXsQ3FtyKuiyi2jTyu/olrIP0aLC0hCAX3hnOCXUK",
     "createdAt": "2025-11-14T08:51:16.776Z"
   },
-  {
-    "id": "d7b707bc-91f1-40b5-b887-a02fdc382d7d",
-    "username": "adolf",
-    "name": "Adolf",
-    "firstName": "Adolf",
-    "lastName": "Hitler",
-    "class": "Tyskland",
-    "passwordHash": "$2b$10$f55bukQ9gtIAs9DM2Hts7OI4PeCzwgTz2ovrF3WGD2lheHl3alxDu",
-    "createdAt": "2025-11-14T08:51:32.016Z"
-  },
+
   {
     "id": "75e5f125-39e4-4f41-be28-0353f48f421a",
     "username": "joe",
@@ -128,5 +119,15 @@
     "class": "test",
     "passwordHash": "$2b$10$d4fVGLL60gk6HrwEq3Loy.XWwKw8kWER7igMwuzKczTy.A3bgUIRy",
     "createdAt": "2025-11-14T09:12:19.657Z"
+  },
+  {
+    "id": "1249a620-b598-45f4-bf20-2af24210c46f",
+    "username": "ddd",
+    "name": "ddd",
+    "firstName": "ddd",
+    "lastName": "ddddddddddddddddd",
+    "class": "dddddddddddddddd",
+    "passwordHash": "$2b$10$ZDaeFZNJq8HzLUWSd1kKt.U2Vi8T2pfhuVmD6SgojBvXBeSZ17HQK",
+    "createdAt": "2025-11-14T09:53:41.488Z"
   }
 ]
