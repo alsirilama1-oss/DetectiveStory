@@ -1,2 +1,132 @@
 [
+  {
+    "id": "63ee7dce-7943-4023-88bd-d3a1a2204dee",
+    "username": "even",
+    "name": "Even",
+    "firstName": "Even",
+    "lastName": "w",
+    "class": "2imb",
+    "passwordHash": "$2b$10$fI.5ayt2VxZ77C.wj232eO7prQ9Vb9.fLqHKnoLg1M84dLRIxVAQy",
+    "createdAt": "2025-11-14T08:45:04.157Z"
+  },
+  {
+    "id": "6356f5c4-449f-489c-a6e9-a1eeace2f1ed",
+    "username": "hadi",
+    "name": "Hadi",
+    "firstName": "Hadi",
+    "lastName": "Ali",
+    "class": "2IM?",
+    "passwordHash": "$2b$10$r7LR8zB5JkQpJHp9bdUpZeKdxaw10pt2IDA2V4rrucf5r5vJ6xk3W",
+    "createdAt": "2025-11-14T08:45:38.469Z"
+  },
+  {
+    "id": "961837a9-697f-4721-a63f-bec1d68a6fce",
+    "username": "eeee",
+    "name": "eeee",
+    "firstName": "eeee",
+    "lastName": "eeeeeeeeeeeeeeeeeee",
+    "class": "eeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "passwordHash": "$2b$10$B0wn7FRtz4GhParKg3.1wOgKDAu2/0oIQ/E7/wcabCMu1RQ23l1gG",
+    "createdAt": "2025-11-14T08:48:06.815Z"
+  },
+  {
+    "id": "c9bc889c-4cea-4783-a805-c4b8c9ac7ac7",
+    "username": "eeeeee",
+    "name": "eeeeee",
+    "firstName": "eeeeee",
+    "lastName": "eeeeeeeeeeeeeeeeee",
+    "class": "eeeeeeeeeeeeeeeee",
+    "passwordHash": "$2b$10$eICjleLyMdV44cM4tskDN.IRkfZ/bXBdeevvzHXSzioCZZ91pWi4e",
+    "createdAt": "2025-11-14T08:50:36.642Z"
+  },
+  {
+    "id": "ec6bceb8-bd7a-4d63-8566-3bd181cb0230",
+    "username": "e",
+    "name": "e",
+    "firstName": "e",
+    "lastName": "eeeeeeeeeeeeeeeee",
+    "class": "eeeeeeeeeeeeeeeee",
+    "passwordHash": "$2b$10$aGe.YPX1hN88NXsQ3FtyKuiyi2jTyu/olrIP0aLC0hCAX3hnOCXUK",
+    "createdAt": "2025-11-14T08:51:16.776Z"
+  },
+  {
+    "id": "d7b707bc-91f1-40b5-b887-a02fdc382d7d",
+    "username": "adolf",
+    "name": "Adolf",
+    "firstName": "Adolf",
+    "lastName": "Hitler",
+    "class": "Tyskland",
+    "passwordHash": "$2b$10$f55bukQ9gtIAs9DM2Hts7OI4PeCzwgTz2ovrF3WGD2lheHl3alxDu",
+    "createdAt": "2025-11-14T08:51:32.016Z"
+  },
+  {
+    "id": "75e5f125-39e4-4f41-be28-0353f48f421a",
+    "username": "joe",
+    "name": "joe",
+    "firstName": "joe",
+    "lastName": "swanson",
+    "class": "3IMG",
+    "passwordHash": "$2b$10$B/b4Z4nyjneFd3TSGcHsreq9K0o4Jv9I4Ar7A2SdLjxedQ2k2VIbm",
+    "createdAt": "2025-11-14T08:53:01.123Z"
+  },
+  {
+    "id": "87def121-ae35-4100-9010-79464c8f9cd3",
+    "username": "mamma",
+    "name": "mamma",
+    "firstName": "mamma",
+    "lastName": "senad",
+    "class": "2ima",
+    "passwordHash": "$2b$10$Pv8taLp0xUxSG6eCmyrFDObnyQ5bjJamPNfk21o3tvU/aX7QUzora",
+    "createdAt": "2025-11-14T08:54:08.337Z"
+  },
+  {
+    "id": "02356beb-ae63-4466-ad72-58f0ebac6ef2",
+    "username": "eee",
+    "name": "eee",
+    "firstName": "eee",
+    "lastName": "eee",
+    "class": "eeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "passwordHash": "$2b$10$COVZWF5SYc2rmuv.16MJBenqIU0DK4N.jJxVdWpSqycBiRF8qcwu6",
+    "createdAt": "2025-11-14T08:54:35.011Z"
+  },
+  {
+    "id": "a604cd83-cb11-469e-9b55-78e8c99f4740",
+    "username": "eeeee",
+    "name": "eeeee",
+    "firstName": "eeeee",
+    "lastName": "eeeeeeeeeeeeeeeee",
+    "class": "eeeeeeeeeeeeeeeeeee",
+    "passwordHash": "$2b$10$6df0uMRYm1GUXQkHkjmkieYgaqBTHUaLbKia5UnI2EECUCdVCiTdS",
+    "createdAt": "2025-11-14T09:02:07.102Z"
+  },
+  {
+    "id": "33ef897a-583b-4246-b33e-8fa2059bc199",
+    "username": "ape",
+    "name": "Ape",
+    "firstName": "Ape",
+    "lastName": "Katt",
+    "class": "2IT A",
+    "passwordHash": "$2b$10$Re16xOiOoXkXeHcqDTOVRO1oTQBC2sn54LT.1qBVC11Nxy5oW6OGq",
+    "createdAt": "2025-11-14T09:07:59.184Z"
+  },
+  {
+    "id": "de800b34-7ac3-449c-8d41-f05e0af267e1",
+    "username": "stian",
+    "name": "Stian",
+    "firstName": "Stian",
+    "lastName": "Jerve",
+    "class": "2IMA",
+    "passwordHash": "$2b$10$0e3/aKVcasC/ng330Jumv.ROqBIfypQvVp.ZMyZcK1qYWKGhxgO2m",
+    "createdAt": "2025-11-14T09:08:32.934Z"
+  },
+  {
+    "id": "0a6f01d4-276d-49c0-8d22-f8a67ac7ce9f",
+    "username": "test",
+    "name": "test",
+    "firstName": "test",
+    "lastName": "test",
+    "class": "test",
+    "passwordHash": "$2b$10$d4fVGLL60gk6HrwEq3Loy.XWwKw8kWER7igMwuzKczTy.A3bgUIRy",
+    "createdAt": "2025-11-14T09:12:19.657Z"
+  }
 ]

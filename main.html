@@ -8,6 +8,10 @@
 </head>
 <body>
 
+  <div id="user-notification" class="user-notification hidden">
+    <p id="user-notification-time" class="user-notification__time">Akkurat n�</p>
+    <p id="user-notification-message" class="user-notification__message">En ny bruker er registrert</p>
+  </div>
   <!-- 🔹 Hero / Toppseksjon -->
   <header class="hero">
     <div class="hero-overlay">
@@ -24,17 +28,17 @@
   <section class="stats">
     <div class="stat">
       <div class="icon">🏆</div>
-      <h3>20+</h3>
+      <h3><span id="stat-tournaments-held">20+</span></h3>
       <p>Turneringer avholdt</p>
     </div>
     <div class="stat">
       <div class="icon">🎮</div>
-      <h3>150+</h3>
+      <h3><span id="stat-active-players">150+</span></h3>
       <p>Aktive spillere</p>
     </div>
     <div class="stat">
       <div class="icon">🕹️</div>
-      <h3>12</h3>
+      <h3><span id="stat-games">12</span></h3>
       <p>Spill representert</p>
     </div>
   </section>
@@ -69,14 +73,11 @@
         </ul>
         <button class="btn blue">Meld deg på</button>
       </div>
-
     </div>
   </section>
-
   <footer>
     <p>© 2025 IM Esport Hub — Kuben VGS</p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
