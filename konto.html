@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konto — IM Esport Hub</title>
+  <link rel="stylesheet" href="css/konto.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="main.html" class="logo">IM <span>Esport</span> Hub</a>
+      </div>
+
+      <nav class="nav">
+        <a href="main.html">Hjem</a>
+        <a href="tournaments.html">Turneringer</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="account.html" class="active">Konto</a>
+      </nav>
+
+      <div class="user-actions">
+        <button id="logoutBtn" class="ghost">Logg ut</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <!-- Profile + rank -->
+    <section class="profile-row">
+      <div class="profile-card">
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"> <!-- svg fallback -->
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <circle cx="12" cy="8" r="3.5" fill="#79A7FF"/>
+              <path d="M3 20c1.5-4 5-6 9-6s7.5 2 9 6" fill="#4675D9" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="avatar-ring"></div>
+        </div>
+
+        <div class="profile-meta">
+          <h1 id="fullName">Ola Nordmann</h1>
+          <div id="classBadge" class="muted">2IMC</div>
+          <div class="profile-actions">
+            <button id="editBtn" class="btn neon">Rediger profil</button>
+            <button id="uploadBtn" class="btn ghost">Last opp avatar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-card">
+        <div class="rank-top">
+          <div class="rank-value" id="rankValue">#12</div>
+          <div class="rank-trophy">🏆</div>
+        </div>
+        <div class="rank-stats">
+          <div><strong id="wins">4</strong><span>Seire</span></div>
+          <div><strong id="played">18</strong><span>Spill spilt</span></div>
+          <div><strong id="hours">42</strong><span>T. spilt</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content columns -->
+    <section class="content-row">
+      <!-- Left column: Din turnering + Upcoming -->
+      <div class="col left">
+        <div class="section-title"><h2>Din turnering</h2></div>
+
+        <article class="game-card tournament">
+          <div class="game-head">
+            <div class="game-title">FORTNITE</div>
+            <div class="game-tag">Kommende</div>
+          </div>
+          <div class="game-body">
+            <p class="small"><span>🎮</span> Fortnite</p>
+            <p class="small"><span>📅</span> 8. november 2025 — 16:00</p>
+            <p class="small"><span>👥</span> 50 deltakere</p>
+          </div>
+          <div class="game-actions">
+            <button class="btn neon">Se detaljer</button>
+            <button class="btn ghost">Forlat</button>
+          </div>
+        </article>
+
+        <div class="section-title"><h3>Anbefalte turneringer</h3></div>
+        <div class="grid small-grid">
+          <article class="mini-card">Valorant — 15. nov</article>
+          <article class="mini-card">Rocket League — 20. nov</article>
+          <article class="mini-card">CS2 — 24. nov</article>
+        </div>
+      </div>
+
+      <!-- Right column: Stats + Dine spill -->
+      <div class="col right">
+        <div class="section-title"><h2>Statistikk</h2></div>
+        <div class="grid stats-grid">
+          <div class="stat neon-border">
+            <div class="stat-num" id="statTournaments">20+</div>
+            <div class="stat-label">Turneringer avholdt</div>
+          </div>
+          <div class="stat neon-border">
+            <div class="stat-num" id="statPlayers">150+</div>
+            <div class="stat-label">Aktive spillere</div>
+          </div>
+          <div class="stat neon-border">
+            <div class="stat-num" id="statGames">12</div>
+            <div class="stat-label">Spill representert</div>
+          </div>
+        </div>
+
+        <div class="section-title"><h3>Dine spill</h3></div>
+        <div class="grid games-grid">
+          <div class="game-pill">Fortnite</div>
+          <div class="game-pill">Valorant</div>
+          <div class="game-pill">Rocket League</div>
+          <div class="game-pill">CS2</div>
+        </div>
+
+        <div class="section-title"><h3>Aktivitet</h3></div>
+        <div class="activity">
+          <div class="activity-item"><span class="dot bg-blue"></span> Vant kvartfinale i Fortnite</div>
+          <div class="activity-item"><span class="dot bg-purple"></span> Ny turnering lagt til: Valorant</div>
+          <div class="activity-item"><span class="dot bg-teal"></span> Du ble med i Rocket League</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 IM Esport Hub — Kuben VGS</p>
+    </div>
+  </footer>
+
+  <script src="js/konto.js"></script>
+</body>
+</html>
