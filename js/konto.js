@@ -1,50 +1,70 @@
-// Enkel logikk: henter siste registrerte bruker fra localStorage (fra register-siden vi laget).
-// Hvis ingen bruker finnes: vis "Gjest".
-(function () {
-  // Hent brukere (array) fra localStorage
-  const students = JSON.parse(localStorage.getItem('students')) || [];
+document.addEventListener('DOMContentLoaded', () => {
+  const fullNameEl = document.getElementById('fullName')
+  const classBadgeEl = document.getElementById('classBadge')
+  const rankValueEl = document.getElementById('rankValue')
+  const winsEl = document.getElementById('wins')
+  const playedEl = document.getElementById('played')
+  const hoursEl = document.getElementById('hours')
+  const logoutBtn = document.getElementById('logoutBtn')
+  const editBtn = document.getElementById('editBtn')
+  const uploadBtn = document.getElementById('uploadBtn')
 
-  const user = students.length ? students[students.length - 1] : null;
+  const token = localStorage.getItem('authToken')
 
-  const fullNameEl = document.getElementById('fullName');
-  const classBadgeEl = document.getElementById('classBadge');
-  const rankValueEl = document.getElementById('rankValue');
-  const winsEl = document.getElementById('wins');
-  const playedEl = document.getElementById('played');
-  const hoursEl = document.getElementById('hours');
-
-  if (user) {
-    fullNameEl.textContent = `${user.firstName} ${user.lastName}`;
-    classBadgeEl.textContent = user.class || 'Ukjent';
-  } else {
-    fullNameEl.textContent = 'Gjest';
-    classBadgeEl.textContent = 'Ingen klasse';
+  if (!token) {
+    window.location.href = 'index.html'
+    return
   }
 
-  // Dummy-statistikk (kan byttes ut med faktisk backend senere)
-  // For variasjon: lag små tilfeldige tall
-  const randWins = Math.max(1, Math.floor(Math.random() * 8));
-  const randPlayed = Math.max(3, Math.floor(Math.random() * 40));
-  const randHours = Math.max(10, Math.floor(Math.random() * 200));
-  winsEl.textContent = randWins;
-  playedEl.textContent = randPlayed;
-  hoursEl.textContent = randHours;
+  async function fetchCurrentUser() {
+    const response = await fetch('/api/auth/me', {
+      headers: { Authorization: `Bearer ${token}` },
+    })
 
-  // Rank basert på wins (enkelt eksempel)
-  rankValueEl.textContent = `#${Math.max(1, 50 - randWins * 3)}`;
+    if (response.status === 401) {
+      localStorage.removeItem('authToken')
+      localStorage.removeItem('currentUser')
+      window.location.href = 'index.html'
+      return null
+    }
 
-  // Logout-knapp (enkelt: fjern localStorage og gå til index)
-  document.getElementById('logoutBtn').addEventListener('click', function () {
-    // Vil du ikke slette alt? her sletter vi ikke alle data, bare simulerer logout:
-    // localStorage.removeItem('students');
-    window.location.href = 'index.html';
-  });
+    if (!response.ok) {
+      throw new Error('Kunne ikke hente brukeren')
+    }
 
-  // Edit & upload (placeholder)
-  document.getElementById('editBtn').addEventListener('click', function () {
-    alert('Rediger-profil: kommer snart — dette er demo.');
-  });
-  document.getElementById('uploadBtn').addEventListener('click', function () {
-    alert('Last opp avatar: kommer snart — dette er demo.');
-  });
-})();
+    return response.json()
+  }
+
+  function applyProfile(user) {
+    if (!user) return
+    fullNameEl.textContent = `${user.firstName} ${user.lastName}`
+    classBadgeEl.textContent = user.className || 'Ukjent'
+    rankValueEl.textContent = user.rank ?? '#12'
+    winsEl.textContent = user.wins ?? '4'
+    playedEl.textContent = user.played ?? '18'
+    hoursEl.textContent = user.hours ?? '42'
+    localStorage.setItem('currentUser', JSON.stringify(user))
+  }
+
+  fetchCurrentUser()
+    .then(user => applyProfile(user))
+    .catch(err => {
+      console.error(err)
+      fullNameEl.textContent = 'Gjest'
+      classBadgeEl.textContent = 'Ingen klasse'
+    })
+
+  logoutBtn?.addEventListener('click', () => {
+    localStorage.removeItem('authToken')
+    localStorage.removeItem('currentUser')
+    window.location.href = 'index.html'
+  })
+
+  editBtn?.addEventListener('click', () => {
+    alert('Rediger-profil: kommer snart - dette er demo.')
+  })
+
+  uploadBtn?.addEventListener('click', () => {
+    alert('Last opp avatar: kommer snart - dette er demo.')
+  })
+})
