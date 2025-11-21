@@ -9,27 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const editBtn = document.getElementById('editBtn')
   const uploadBtn = document.getElementById('uploadBtn')
 
-  const token = localStorage.getItem('authToken')
+  const currentStudentId = localStorage.getItem('currentStudentId')
 
-  if (!token) {
+  if (!currentStudentId) {
     window.location.href = 'index.html'
     return
   }
 
   async function fetchCurrentUser() {
-    const response = await fetch('/api/auth/me', {
-      headers: { Authorization: `Bearer ${token}` },
-    })
+    const response = await fetch(`/api/students/${currentStudentId}`)
 
-    if (response.status === 401) {
-      localStorage.removeItem('authToken')
+    if (response.status === 404 || response.status === 400) {
+      localStorage.removeItem('currentStudentId')
       localStorage.removeItem('currentUser')
       window.location.href = 'index.html'
       return null
     }
 
     if (!response.ok) {
-      throw new Error('Kunne ikke hente brukeren')
+      throw new Error('Kunne ikke hente brukeren, database er nede?')
     }
 
     return response.json()
@@ -57,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   logoutBtn?.addEventListener('click', () => {
     localStorage.removeItem('authToken')
     localStorage.removeItem('currentUser')
+    localStorage.removeItem('currentStudentId')
     window.location.href = 'index.html'
   })
 
